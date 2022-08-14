@@ -24,6 +24,10 @@ def create_app():
             "Access-Control-Allow-Methods", "GET,OPTION,PUT,POST,DELETE"
         )
         return response
+    
+    @app.route("/")
+    def index():
+        return 'Hello'
 
     app.register_blueprint(api_a)
     app.register_blueprint(api_b)

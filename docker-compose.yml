@@ -5,7 +5,7 @@ services:
     image: rednafi/flask-factory:v2
 
     # Give your container a static name
-    container_name: flask-factory
+    container_name: x-motion
 
     build:
       # Explicitly show docker-cli where your Dockerfile lies
